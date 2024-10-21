@@ -16,7 +16,7 @@
             width: 100%;
             height: auto;
             border-radius: 20px;
-            border: 2px solid gold;
+            border: 5px solid gold;
             display: flex;
             justify-content: center;
         }
@@ -46,9 +46,17 @@
             transition: all;
             transition-duration: 0.5s;
         }
+        #info-container{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
         #info img{
-            height: 150px;
-            width: auto;
+            height: auto;
+            width: 105px;
+            object-fit: contain;
             background-color: aliceblue;
             border-radius: 20px;
             padding: 10px;
@@ -58,19 +66,24 @@
             font-size: large;
             text-align: justify;
             height: auto;
-            width:70%;
+            width:70vw;
             border: 2px solid gold;
             padding: 30px;
             border-radius: 20px;
+            transition: all;
+            transition-duration: 0.3s;
         }
-        #info-container{
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
+        #info:hover{
+            background-color: rgb(41, 43, 54);
+            transition: all;
+            transition-duration: 0.3s;
+            border: 4px solid gold;
         }
-        #java{
-            
+        a{
+            text-decoration: none;
+            color:white;
         }
+        
     </style>
 </head>
 <body>
@@ -79,17 +92,23 @@
     </div>
     <h1>Courses Offered</h1>
     <div id="cont">
-        <div id="java" class="cource">
+        <div  class="cource">
+            <a href="https://quntnex.com/java-fullstack/">
             <img src="https://quntnex.com/wp-content/uploads/2024/04/java-icon.png"/>
             <p>Java FullStack</p>
+        </a>
         </div>
-        <div id="py" class="cource">
+        <div  class="cource">
+           
             <img src="https://quntnex.com/wp-content/uploads/2024/04/python-icon.png"/>
             <p>Python FullStack</p>
+       
         </div>
-        <div id="st" class="cource">
+        <div  class="cource">
+            <a href="https://quntnex.com/software-testing/">
             <img src="https://quntnex.com/wp-content/uploads/2024/04/software-testing-icon.png"/>
             <p>Software Testing</p>
+        </a>
         </div>
     </div>
 
@@ -102,6 +121,29 @@
             The globally recognized certification offered upon completion is a testament to the quality of education provided, opening doors to lucrative career opportunities worldwide.
             <br><br>
             Whether you’re looking to kickstart your journey in software development or aiming to upscale your existing skill set, QuntNex’s Java training in Bangalore is the gateway to success in the dynamic world of programming</p> 
+    </div>
+    
+    <div id="info-container">
+        <div id="info">
+            <center>
+        <img src="data:image/png;base64,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 "  style="width:200px; height:70px;"/></center>
+        <p>QuntNex stands out as a premier destination for mastering Python programming.Our Python Full Stack training program is meticulously designed to encompass not just the fundamentals but also the latest frameworks that are currently making waves in the industry.
+            <br><br>
+            The globally recognized certification offered upon completion is a testament to the quality of education provided, opening doors to lucrative career opportunities worldwide.
+            <br><br>
+            Whether you’re looking to kickstart your journey in software development or aiming to upscale your existing skill set, QuntNex’s Python training in Bangalore is the gateway to success in the dynamic world of programming</p> 
+    </div>
+
+    <div id="info-container">
+    <div id="info">
+        <center>
+        <img src="https://quntnex.com/wp-content/uploads/2024/05/testing-banner.png" style="width:200px; height:70px;"/></center>
+        <p>QuntNex stands out as a premier destination for mastering software testing.Our software testing training program is meticulously designed to encompass not just the fundamentals but also the latest frameworks that are currently making waves in the industry.
+            <br><br>
+            The globally recognized certification offered upon completion is a testament to the quality of education provided, opening doors to lucrative career opportunities worldwide.
+            
+            <br><br>
+            Whether you’re looking to kickstart your journey in software testing or aiming to upscale your existing skill set, QuantNex’s software testing training in Bangalore is the gateway to success in the dynamic world of testingp> 
     </div>
 </div>
 </body>
