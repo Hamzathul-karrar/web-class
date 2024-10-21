@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quntnex</title>
+    <style>
+        body {
+            background-color: rgb(164, 200, 233);
+            display: flex;
+            justify-content: center;
+        }
+        #div{
+            background-color: #68b3c4;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            font-weight: bolder;
+        }
+        td{
+            padding: 10px;
+            text-align: center;
+        }
+        input{
+            background-color: #bdfcfe;
+            border-radius: 10px;
+        }
+        input[type="submit"]{
+            font-size: large;
+            font-weight: bold;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            transition: all;
+            transition-duration: 0.3s;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(51, 194, 230);
+            transition: all;
+            transition-duration: 0.3s;
+        }
+        input[type="text"]:focus , input[type="password"]:focus{
+            background-color: rgb(255, 255, 255);
+            transition: all;
+            transition-duration: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+    <h1>Login Page</h1>
+    <form action="quntinfo.html">
+        <table>
+            <tr><td>Username</td>
+            <td><input type="text" name="username" required/></td></tr>
+            <tr><td>Password</td>
+            <td><input type="password" name="password" required/></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Login" /></td></tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
